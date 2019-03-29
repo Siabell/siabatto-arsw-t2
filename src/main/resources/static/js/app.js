@@ -13,11 +13,11 @@ app = (function () {
             $("#press").empty();
             $("#humi").empty();
             var datos = JSON.parse(city);
-            var nombre = datos.name;
+            var nombre = "City: " +datos.name;
             var coord = "longitud:"+datos.coord.lon+" latitud: "+datos.coord.lat;
-            var temp = datos.main.temp;
-            var press = datos.main.pressure;
-            var humi = datos.main.humidity;
+            var temp = "Temperature: "+datos.main.temp;
+            var press = "Pressure: "+datos.main.pressure;
+            var humi = "Humidir: "+datos.main.humidity;
 
 
             $("#nombre").append(nombre);
